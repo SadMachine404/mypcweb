@@ -1,0 +1,216 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    background-color: grey;
+    margin: auto;
+    /* FLEX */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: ivory;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    /* FLEX */
+    display: flex;
+    /*en todos los elementos que queremos que sea padre*/
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/*header .logo {
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 50px;
+    
+}*/
+
+header .logo {
+    color: #FFFFFF;
+    display: flex;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    width: 50%;
+    /* FLEX */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav a {
+    background: #505050;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    /* FLEX */
+    flex-grow: 1;
+}
+
+
+/*a:link, a:visited{
+    color: blue;
+}
+
+a.current:link, a.current:visited{
+    color: white;
+    background-color: blue;
+}*/
+
+header nav a:hover {
+    color: #000000;
+    background: #eabf9f;
+    transform: translateY(-5px);
+}
+
+header nav a.current {
+    color: #000000;
+    background-color: #eabf9f;
+    transform: none;
+}
+
+.main {
+    background-color: #faf3e0;
+    padding: 20px;
+    /*flex: 1 1 70%;*/
+    flex: 1;
+}
+
+.main article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.main article ul {
+    /* list-style: none; */
+    list-style: square;
+}
+
+article.art1 {
+    padding-top: 20px;
+    background-color: #E6E6E6;
+    /* FLEX */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+article .textoArt1 {
+    width: 50%;
+    /* FLEX */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article h2 {
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+article .sliderImagenes {
+    border: 2px solid #2A0A0A;
+    width: 300px;
+    height: 400px;
+}
+
+.main article:nth-last-child(1) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    background-color: #eabf9f;
+    padding: 20px;
+    /* FLEX */
+    display: flex;
+    /*flex: 1 1 30%;*/
+    flex: 0 0 200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+aside .horarioAtencion {
+    border: 1px solid #000000;
+    padding: 5px 1px;
+    margin: 1px;
+}
+
+aside p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+aside .horario {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+
+aside .horas {
+    text-align: center;
+    font-size: 25px;
+}
+
+aside .dias {
+    font-size: 18px;
+}
+
+footer {
+    background-color: b68973;
+    width: 100%;
+    padding: 15px;
+    /* FLEX */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+footer p {
+    width: 125px;
+    text-align: center;
+    color: #000000;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    body {
+        background-color: red;
+    }
+    header {
+        padding: 0px;
+        flex-direction: column;
+    }
+    header nav {
+        width: 100%;
+    }
+}
