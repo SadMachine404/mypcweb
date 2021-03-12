@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #262626;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+
+.card .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+
+.card:hover .front {
+    transform: rotateX(-180deg) ;
+}
+
+.card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+
+/* .card .back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+} */
+
+.card:hover .back {
+    transform: rotateX(0deg);
+}
+
+.card .back .details {
+    position: absolute;
+    top: 30%;
+    transform: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card .back .details h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.card .back .details h2 span {
+    color: #a7a7a7;
+    font-size: 17px;
+}
+
+.social-icons {
+    padding: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.social-icons a .fa {
+    line-height: 36px;
+}
+
+.social-icons a:hover {
+    background: #e91e63;
+}
+
+/* ################################# */
+
+.cardF {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+}
+
+.cardF .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+
+.cardF:hover .front {
+    transform: rotateX(-180deg) ;
+}
+
+.cardF .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+
+.cardF:hover .back {
+    transform: rotateX(0deg);
+}
+
+.cardF .back .details {
+    position: absolute;
+    top: 30%;
+    transform: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cardF .back .details h2 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.cardF .back .details h2 span {
+    color: #a7a7a7;
+    font-size: 17px;
+}
+
+.social-icons {
+    padding: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.social-icons a .fa {
+    line-height: 36px;
+}
+
+.social-icons a:hover {
+    background: #e91e63;
+}

@@ -2,12 +2,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    list-style: none;
 }
 
 .contenedor {
     width: 90%;
     max-width: 1200px;
-    background-color: grey;
+    background-color: #808080;
     margin: auto;
     /* FLEX */
     display: flex;
@@ -16,7 +17,7 @@
 }
 
 body {
-    background-color: ivory;
+    background-color: #fffff0;
 }
 
 header {
@@ -43,7 +44,6 @@ header {
 header .logo {
     color: #FFFFFF;
     display: flex;
-    display: flex;
     align-items: center;
 }
 
@@ -57,7 +57,7 @@ header nav {
 
 header nav a {
     background: #505050;
-    color: white;
+    color: #FFF;
     text-align: center;
     text-decoration: none;
     padding: 10px;
@@ -88,17 +88,13 @@ header nav a.current {
 .main article {
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    box-shadow: 25px 0px 40px #5c5c5c; /*ejeX ejeY blur color*/
+    background-color: #E6E6E6;
 }
 
-.main article ul {
-    /* list-style: none; */
-    list-style: square;
-}
 
 article.art1 {
     padding-top: 20px;
-    background-color: #E6E6E6;
     /* FLEX */
     flex-wrap: wrap;
     display: flex;
@@ -124,15 +120,92 @@ article .sliderImagenes {
     height: 400px;
 }
 
-.main article:nth-last-child(1) {
+/* .main article:nth-last-child(1) {
     margin-bottom: 0px;
     padding-bottom: 0px;
     border-bottom: none;
-}
+} */
 
-.mapa {
+
+.main article.art2 {
+    
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main article.art2 h2 {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.main article.art2 ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main article.art2 ul li {
+    margin: 0 20px;
+    transition: 0.5%;
+}
+
+.main article.art2 ul li p {
+    display: block;
+    position: relative;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.main article.art2 ul:hover li p {
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(5px);
+}
+
+.main article.art2 ul li p:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+
+.main article.art3 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main article.art3 .mapa {
+    padding: 15px;
+}
+
+.main article.art3 .contacto {
+    background-color: #eabf9f;
+    color: #000000;
+    box-shadow: 20px 10px 20px rgba(92, 92, 92, 0.3);
+    padding: 20px ;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.main article.art3 .contacto p {
+    margin: 20px 0;
+}
+
+.main article.art3 .contacto .redes img{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    
+}
+
+.main article.art3 .contacto .redes img:hover {
+    transform: scale(1.2);
+
 }
 
 aside {
@@ -174,7 +247,6 @@ aside .dias {
 }
 
 footer {
-    background-color: b68973;
     width: 100%;
     padding: 15px;
     /* FLEX */

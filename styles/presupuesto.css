@@ -1,0 +1,88 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #808080;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: #fffff0;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    padding: 20px;
+    /* FLEX */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav a {
+    background-color: #505050;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+header nav a:hover {
+    color: #000;
+    background: #eabf9f;
+    transform: translateY(-5px);
+}
+
+header nav a.current {
+    color: #000;
+    background-color: #eabf9f;
+    transform: none;
+}
+
+article .formulario {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* article .formulario:first-child {
+    padding-top: 20px;
+}
+
+article .formulario:last-child {
+    padding-bottom: 20px;
+} */
+
+article .formulario label {
+    color: aqua;
+    text-align: center;
+    width: 100%;
+}
