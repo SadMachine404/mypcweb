@@ -18,5 +18,5 @@ $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-// header("https://www.youtube.com/watch?v=KP0yte9VKMw&ab_channel=DJALEX");
+header("Location:index.html");
 ?>
