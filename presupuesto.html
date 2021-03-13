@@ -30,11 +30,32 @@
             <article>
                 <form name="contact" action="presupuesto.php" method="post" data-netli  data-netlify="true">
 
-                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <p>
+                          <label>Your Name: <input type="text" name="name" /></label>   
+                        </p>
+                        <p>
+                          <label>Your Email: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          <label>Your Role: <select name="role[]" multiple>
+                            <option value="leader">Leader</option>
+                            <option value="follower">Follower</option>
+                          </select></label>
+                        </p>
+                        <p>
+                          <label>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                      </form>
+
+                    <!-- <input type="text" name="nombre" placeholder="Nombre" required>
                     <input type="text" name="correo" placeholder="Correo" required>
                     <input type="text" name="telefono" placeholder="Telefono" required>
                     <textarea name="mensaje" placeholder="Escriba su mensaje" required></textarea>
-                    <input type="submit" value="ENVIAR" id="boton" required>
+                    <input type="submit" value="ENVIAR" id="boton" required> -->
 
                     <!-- <label for="nombre">Nombre y Apellido: </label>
                     <input name="nombre" type="text"> -->
