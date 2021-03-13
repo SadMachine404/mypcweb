@@ -30,14 +30,14 @@
             <article>
                 <form  class="formulario" enctype="text/plain" action="php/presupuesto.php" method="POST">
                     <label for="nombre">Nombre y Apellido: </label>
-                    <input type="text">
-                    <label for="telefono">Celular: </label>
-                    <input type="number">
+                    <input name="name" type="text">
+                    <!-- <label for="telefono">Celular: </label> -->
+                    <!-- <input type="number"> -->
                     <label for="presupuesto">Describe tu presupuesto, que necesitas, presupuesto, etc
                         : </label>
-                    <textarea name="presupuesto" id="" cols="80" rows="8"></textarea>
+                    <textarea name="mensaje" id="" cols="80" rows="8"></textarea>
                     <button type="submit">Enviar</button>
-
+                    <input type="email" name="email" placeholder="su email">
 
                 </form>
             </article>

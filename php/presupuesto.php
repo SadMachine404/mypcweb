@@ -1,7 +1,7 @@
 <?php
 $nombre = $_POST['nombre'];
 $mail = $_POST['email'];
-$empresa = $_POST['presupuesto'];
+$empresa = $_POST['mensaje'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
@@ -13,10 +13,10 @@ $mensaje .= "Su e-mail es: " . $mail . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'tutorialeskevindj@gmail.com';
+$para = 'kevin.kling@outlook.es';
 $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location:index.html");
+// header("https://www.youtube.com/watch?v=KP0yte9VKMw&ab_channel=DJALEX");
 ?>
