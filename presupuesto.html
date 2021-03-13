@@ -22,13 +22,20 @@
                 <a href="index.html"> Inicio </a>
                 <a href="./trabajos.html"> Algunos Trabajos </a>
                 <a href="./presupuesto.html" class="current"> Pedir Presupuesto </a>
-                <a href="./about.html"> Quienes Somos</a>
+                <a href="./contact.html">Quienes Somos</a>
             </nav>
         </header>
 
         <section class="main">
             <article>
-                <form name="contact-form" class="formulario" enctype="text/plain" action="presupuesto.php" method="POST">
+                <form action="presupuesto.php" method="post">
+
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="correo" placeholder="Correo" required>
+                    <input type="text" name="telefono" placeholder="Telefono" required>
+                    <textarea name="mensaje" placeholder="Escriba su mensaje" required></textarea>
+                    <input type="submit" value="ENVIAR" id="boton" required>
+
                     <!-- <label for="nombre">Nombre y Apellido: </label>
                     <input name="nombre" type="text"> -->
                     <!-- <label for="telefono">Celular: </label> -->
@@ -38,12 +45,13 @@
                     <textarea name="mensaje" id="" cols="80" rows="8"></textarea>
                     <button type="submit">Enviar</button>
                     <input type="email" name="email" placeholder="su email"> -->
-                        <input type="text" name="nombre " placeholder="nombre">
+                        <!-- <input type="text" name="nombre " placeholder="nombre">
                         <input name="mensaje" placeholder="you name">
                         <input type="email" name="email" >
                         <textarea name="mensaje"  cols="30" rows="10"></textarea>
-                        <button type="submit">botom</button>
+                        <button type="submit">botom</button> -->
                         
+                
                 </form>
             </article>
         </section>

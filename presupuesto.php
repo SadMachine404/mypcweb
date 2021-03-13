@@ -1,22 +1,11 @@
 <?php
-$nombre = $_POST['nombre'];
-$mail = $_POST['email'];
-$empresa = $_POST['mensaje'];
+    $destino = "kevin.kling@outlook.es";
+    $nombre = $_POST["nombre"];
+    $correo = $_POST["correo"];
+    $telefono = $_POST["telefono"];
+    $mensaje = $_POST["mensaje"];
+    $contenido = "Nombre: " . $nombre . "\nCorreo: " . $correo . "\nTelefono" . $telefono . "\nMensaje: " . $mensaje;
+    mail($destino, "Contacto", $contenido);
+    header("Location:index.html");
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
-
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
-$mensaje .= "Enviado el " . date('d/m/Y', time());
-
-$para = 'kevin.kling@outlook.es';
-$asunto = 'Mensaje de mi sitio web';
-
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-header("Location:index.html");
 ?>
