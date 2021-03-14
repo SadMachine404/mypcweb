@@ -1,35 +1,29 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 }
 
 .contenedor {
     width: 90%;
-    max-width: 1200px;
-    background-color: #808080;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    background-color: #1e212d;
+    /* overflow: hidden; */
+    padding: 50px 0;
 }
 
-body {
-    background-color: #fffff0;
-}
-
+/*
 header {
     background-color: #000;
     width: 100%;
     padding: 20px;
-    /* FLEX */
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+ 
 header .logo {
     color: #FFF;
     display: flex;
@@ -63,26 +57,115 @@ header nav a.current {
     color: #000;
     background-color: #eabf9f;
     transform: none;
-}
-
-article .formulario {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-/* article .formulario:first-child {
-    padding-top: 20px;
-}
-
-article .formulario:last-child {
-    padding-bottom: 20px;
 } */
 
-article .formulario label {
-    color: aqua;
-    text-align: center;
+/* ## */
+
+.main {
     width: 100%;
+    position: relative;
+    margin: auto;
 }
+
+
+.caja {
+    width: 60%;
+    margin: auto;
+    background-color: #faf3e0;
+    border: 3px solid #000;
+    box-shadow: 15px 15px 15px #000 ;
+}
+
+.main div {
+    padding: 10px;
+}
+
+.main p {
+    display: block;
+    text-align: center;
+    padding-bottom: 8px;
+    
+    font-size: 20px;
+    font-style: bold;
+}
+
+.main p.titulo {
+    font-family: Helvetica;
+    font-size: 30px;
+    text-decoration: underline;
+    text-shadow: o o 20px #000;
+    text-transform: uppercase;
+}
+
+.main input {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding: 5px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: #eabf9f;
+    color: #000;
+    font-size: 1.3rem;
+    outline: 0px;
+}
+
+/* para sacar el cosito de aumentar disminuir numero */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+
+
+.main input:focus {
+    box-shadow: 0 0 15px #000;
+}
+
+/* .main input:valid {
+    border-color: ;
+} */
+
+.main textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000;
+    border-radius: 20px;
+    border-color: #000;
+    background-color: #eabf9f;
+    color: #000;
+    text-align: center;
+    font-size: 1.3rem;
+    outline: 0px;
+    resize: none;
+    
+}
+
+.main textarea:focus {
+    box-shadow: 0 0 15px #000;
+}
+
+.main button {
+    width: 6rem;
+    height: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    border-radius: 25px;
+    background-color: #eabf9f;
+    border: 3px solid #000;
+    border-radius: 20px;
+    border-color: #000;
+    
+}
+
+.main button:hover {
+    box-shadow: 0 0 20px #000;
+}
+
